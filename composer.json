@@ -1,0 +1,36 @@
+{
+  "name": "rogercbe/detective",
+  "description": "Add filter, search and sort to your models",
+  "homepage": "https://github.com/rogercbe/detective",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "sort",
+    "filter",
+    "search"
+  ],
+  "authors": [
+    {
+      "name": "Roger Cendrós",
+      "email": "rogercbe@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3"
+  },
+  "extra": {
+        "laravel": {
+            "providers": [
+                "Rogercbe\\Detective\\DetectiveServiceProvider"
+            ]
+        }
+    },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ],
+    "psr-4": {
+      "Rogercbe\\Detective\\": "src/"
+    }
+  }
+}
